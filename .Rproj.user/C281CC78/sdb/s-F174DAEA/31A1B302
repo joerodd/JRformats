@@ -1,0 +1,17 @@
+{
+    "contents" : "#' rmdformats\n#'\n#' @name rmdformats\n#' @docType package\nNULL\n",
+    "created" : 1453148009829.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2519463982",
+    "id" : "31A1B302",
+    "lastKnownWriteTime" : 1443703266,
+    "path" : "~/Dev/rmdformats/R/rmdformats-package.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

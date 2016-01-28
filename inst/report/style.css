@@ -1,0 +1,173 @@
+body {
+    font-family: "Gentium Basic", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 0 0 0;
+    text-align: justify;
+}
+
+#header, #TOC{
+	width: 100%;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F3F3F3;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#TOC {
+	margin-bottom: -17px;
+}
+
+#abstract, .references{
+	width: 100%;
+	max-width: 670px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F3F3F3;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#header .title{
+	font-family: "Kreon", sans-serif;
+	page-break-after: avoid;
+	color: #008888;
+	font-size: 40px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#header .author, #header .date{
+	display: inline-block;
+	font-family: "Gentium Basic", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+	font-variant: normal;
+	page-break-after: avoid;
+	color: #000000;
+	font-size: 18px;
+	padding-left: 30px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+}
+
+/*#abstract, .references{
+	width: 100%;
+	max-width: 670px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F3F3F3;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}*/
+
+
+.section {
+	width: 100%;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section h1 {
+    padding-bottom: 9px;
+    /*margin: 40px 0px 20px;*/
+    border-bottom: 1px solid #EEE;
+    font-size: 36px;
+}
+
+.level1:not(.unnumbered):not(#abstract):not(.references) {
+    counter-increment: hOne;
+}
+
+.level1.references h1, #abstract h1{
+	font-size: 18px;
+	border-bottom: none;
+}
+
+.level1.references h1::before{
+
+}
+
+.level1:not(.unnumbered):not(#abstract):not(.references) h1::before {
+  content: "" counter(hOne) ". ";
+}
+
+.main_float {
+	max-width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	width:calc(100% - 20px);
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F3F3F3;
+    page-break-inside: avoid;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+.main_float .caption {
+	width: 130px;
+	vertical-align: top;
+	/*background-color: #444444;*/
+	display: inline-block;
+	top: 0px;
+	margin-top: 0px;
+	font-size: small;
+	padding: 2px;
+}
+.main_float .art {
+    width: calc(100% - 150px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2px;
+/*    background-color: #ff00ff;*/
+    display: inline-block;
+}
+
+th.rotate {
+  /* Something you can count on */
+  height: 140px;
+  white-space: nowrap;
+}
+
+th.rotate > div {
+  transform: 
+    /* Magic Numbers */
+    translate(25px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+}
+th.rotate > div > span {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+.art img{
+	width: 100%;
+}
+
+.figure_num {
+	color: #888888;
+}
+
+div.figure {
+    counter-increment: figure;
+}

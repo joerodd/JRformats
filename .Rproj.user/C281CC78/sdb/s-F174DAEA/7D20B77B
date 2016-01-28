@@ -1,0 +1,18 @@
+{
+    "contents" : "#' JRformats\n#'\n#' @name JRformats\n#' @docType package\nNULL\n",
+    "created" : 1453149066323.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1474596104",
+    "id" : "7D20B77B",
+    "lastKnownWriteTime" : 1453149086,
+    "path" : "~/Dev/R_packages/JRformats/R/JRformats-package.R",
+    "project_path" : "R/JRformats-package.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
