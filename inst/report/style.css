@@ -1,7 +1,7 @@
 body {
     font-family: "Gentium Basic", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     margin: 0 0 0 0;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 #header, #TOC{
@@ -141,24 +141,28 @@ body {
     display: inline-block;
 }
 
-th.rotate {
-  /* Something you can count on */
-  height: 140px;
-  white-space: nowrap;
+td {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 2px solid #F3F3F3;
 }
 
-th.rotate > div {
-  transform: 
-    /* Magic Numbers */
-    translate(25px, 51px)
-    /* 45 is really 360 - 45 */
-    rotate(315deg);
-  width: 30px;
+tr {
+	vertical-align: top;
 }
-th.rotate > div > span {
-  border-bottom: 1px solid #ccc;
-  padding: 5px 10px;
+
+tr.odd {
+	background-color: #F9F9F9;
 }
+
+
+th {
+	border-bottom: 1px solid #888888;
+	border-right: 2px solid #F3F3F3;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 
 .art img{
 	width: 100%;
