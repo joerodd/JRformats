@@ -132,7 +132,7 @@ report <- function(toc = TRUE) {
 													 fig_height = 4,
 													 theme = NULL,
 													 extra_dependencies = list(html_dependency_report(),
-													 													rmarkdown:::html_dependency_jquery()),
+													 													 rmarkdown:::html_dependency_jquery()),
 													 self_contained = F)
 }
 
@@ -141,8 +141,11 @@ html_dependency_report <- function() {
 	htmltools::htmlDependency(name = "report",
 														version = "0.1",
 														src = system.file("report", package="JRformats"),
+														head = "<link href='https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic|Kreon:400,300' rel='stylesheet' type='text/css'>
+",
 														stylesheet = "style.css")
 }
+
 
 standard_theme <- function(){ggplot2::theme(plot.background = ggplot2::element_rect(fill = "#F3F3F3",size=0),
 																 legend.background = ggplot2::element_rect(fill = "#F3F3F3"),
