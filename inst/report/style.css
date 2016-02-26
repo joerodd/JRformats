@@ -141,6 +141,10 @@ body {
     display: inline-block;
 }
 
+.art .caption{
+    display: none;
+}
+
 td {
 	padding-left: 10px;
 	padding-right: 10px;

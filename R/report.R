@@ -95,10 +95,9 @@ report <- function(toc = TRUE) {
 			options$fig.width=4
 			options$fig.height=3
 			if (before){
-				paste0('<div id="',options$label,'"  class="figure main_float"><p class="caption"><span class="figure_num"> Figure ',figure_number(options$label),'</span> ',options$fig.cap,'</p><p class="art">')
+				paste0('<div id="',options$label,'"  class="figure main_float"><p class="caption"><span class="figure_num"> Figure ',figure_number(options$label),'</span> ',options$fig.cap,'</p><div class="art">')
 			} else {
-
-				paste0('</p></div>')
+				paste0('</div></div>')
 			}
 		} else if (options$wrap=="main_table") {
 			if (before){
@@ -130,6 +129,7 @@ report <- function(toc = TRUE) {
 	rmarkdown::html_document(toc = toc,
 													 fig_width = 6.5,
 													 fig_height = 4,
+													 fig.show='asis',
 													 theme = NULL,
 													 extra_dependencies = list(html_dependency_report(),
 													 													 rmarkdown:::html_dependency_jquery()),
